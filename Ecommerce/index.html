@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Ecommerce/assets/css/style.css">
+  <title>My E-commerce Store</title>
+
+  
+
+  <script src="../Ecommerce/assets/js/script.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+  <nav>
+    <img src="../Ecommerce/assets/images/logo.jpg" alt="Logo">
+    <ul>
+      <li><button><a href="index.html" onclick="navigateToPage('index')">Home</a></button></li>
+      <li><button><a href="products.html" onclick="navigateToPage('products')">Products</a></button></li>
+      <li><button><a href="aboutus.html" onclick="navigateToPage('about-us')">AboutUs</a></button></li>
+      <li><button><a href="contactus.html" onclick="navigateToPage('contact-us')">ContactUs</a></button></li>
+
+    </ul>
+  </nav>
+
+  <br>
+
+
+  <section id="sliders">
+
+    <h1>Welcome to My E-commerce Store</h1><br>
+    <p>Discover amazing products at great prices!</p>
+
+  </section>
+
+  <br>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="../Ecommerce/assets/images/slider2.jpg" style="height:100%;width:100%">
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="../Ecommerce/assets/images/slider1.jpg" style="width:100%">
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="../Ecommerce/assets/images/slider3.jpg" style="width:100%">
+
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+  <section id="shop-by-category">
+
+    <h2>Latest Products</h2><br>
+    <br>
+    <ul>
+      <li>Headset</a></li><br><br>
+      <img src="../Ecommerce/assets/images/headset.jpg" alt="Logo"><br><br>
+      <li>Laptop</a></li><br>
+      <img src="../Ecommerce/assets/images/laptop.jpg" alt="Logo"><br>
+      <li>iphone</a></li><br>
+      <img src="../Ecommerce/assets/images/iphone.jpg" alt="Logo"><br>
+
+
+
+
+    </ul>
+  </section>
+
+
+  <section id="latest-products">
+
+    <h2>Shop by Category</h2><br>
+    <ul>
+      <li>Home-Electronics</li>
+      <li>Home-Furniture</li>
+
+      <li>Home-Utensils</li>
+      <li>Fashion</li>
+    </ul>
+
+    <div class="products">
+      <button><a href="products.html">SHOP........</a></button>
+
+
+    </div>
+
+
+  </section>
+
+
+  <section id="features">
+    <h2>Features</h2>
+
+    <div class="feature">
+      <h3>Secure Shopping</h3>
+      <p>Shop with confidence knowing that your transactions are secure and your personal information is protected.</p>
+      <h3>Wide Product Selection</h3>
+      <p>Explore a diverse range of products across different categories, ensuring you find exactly what you're looking
+        for.</p>
+      <h3>Fast and Reliable Delivery</h3>
+      <p>Enjoy prompt and reliable delivery services, ensuring that your purchases reach you on time.</p>
+      <h3>User-Friendly Interface</h3>
+      <p>Experience a seamless and intuitive shopping journey with our user-friendly interface designed for your
+        convenience.</p>
+      <h3>Responsive Customer Support</h3>
+      <p>Our dedicated customer support team is here to assist you with any queries or concerns, providing responsive
+        assistance.</p>
+      <h3>Exclusive Deals and Discounts</h3>
+      <p>Take advantage of special offers, exclusive deals, and discounts to maximize your savings while shopping with
+        us.</p>
+    </div>
+
+
+
+  </section>
+
+
+
+  <div class="scrolltotop">
+    <button>Go-TOP</button>
+  </div>
+
+  <br>
+
+
+  <footer>
+
+    <p>&copy; 2024 My E-commerce Store. All rights reserved.</p>
+  </footer>
+
+  
+<script>
+  let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+</script>
+  
+  
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+
+    <link rel="stylesheet" href="../Ecommerce/assets/css/Clothes.css">
+    <script src="../Ecommerce/assets/js/Clothes.js"></script>
+
+</head>
+
+<body>
+
+    <nav>
+        <img src="../Ecommerce/assets/images/logo.jpg" alt="Logo">
+        <ul>
+            <li><button><a href="index.html" onclick="navigateToPage('index')">Home</a></button></li>
+            <li><button><a href="products.html" onclick="navigateToPage('products')">Products</a></button></li>
+            <li><button><a href="aboutus.html" onclick="navigateToPage('about-us')">About Us</a></button></li>
+            <li><button><a href="contactus.html" onclick="navigateToPage('contact-us')">Contact Us</a></button></li>
+            <li><button><a href="cart.html">Cart</a></button></li> <!-- Added Cart button -->
+        </ul>
+    </nav>
+
+    <br>
+
+
+
+    <div>
+        <label for="minPrice">Min Price:</label>
+        <input type="number" id="minPrice" min="0" step="1" placeholder="Min Price">
+
+        <label for="maxPrice">Max Price:</label>
+        <input type="number" id="maxPrice" min="0" step="1" placeholder="Max Price">
+
+        <button onclick="applyPriceFilter()">Apply Filter</button>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="categoryFilter">Category:</label>
+        <input type="text" id="categoryFilter" placeholder="Enter category">
+        <button onclick="applyCategoryFilter()">Apply Category Filter</button>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Shirt</h3>
+            <img src="../Ecommerce/assets/images/shirt.jpg" alt="">
+            <p class="price">Rs.19999/-</p>
+            <button class="add-to-cart" onclick="addToCart('Shirt', 19999, this)">Add to Cart</button>
+
+        </div>
+
+
+        <div class="card">
+            <h3>Pant</h3>
+            <img src="../Ecommerce/assets/images/pant.jpg" alt="">
+            <p class="price">Rs.20000/-</p>
+            <button class="add-to-cart" onclick="addToCart('Pant', 20000 , this)">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <h3>Saree</h3>
+            <img src="../Ecommerce/assets/images/saree.jpg" alt="">
+            <p class="price">Rs.29999/-</p>
+            <button class="add-to-cart" onclick="addToCart('Saree', 29999, this)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <h3>Skirt</h3>
+            <img src="../Ecommerce/assets/images/skirt.jpg" alt="">
+            <p class="price">Rs.40000/-</p>
+            <button class="add-to-cart" onclick="addToCart('Skirt', 40000 , this)">Add to Cart</button>
+        </div>
+
+
+
+    </div>
+
+    <div class="scrolltotop">
+        <button>Go-TOP</button>
+    </div>
+
+    <br>
+
+    <footer>
+
+        <p>&copy; 2024 My E-commerce Store. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

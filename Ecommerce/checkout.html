@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="../Ecommerce/assets/css/checkout.css">
+    <script src="../Ecommerce/assets/js/checkout.js"></script>
+
+</head>
+
+<body>
+
+    <h2>Checkout Page</h2>
+
+    <div class="container">
+        <h1 style="color: rgb(44, 107, 225);">Order Summary</h1>
+        <div id="orderSummary"></div>
+    </div>
+
+    <div>
+        <h3>Shipping Information</h3>
+        <form id="orderForm">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required> <br><br>
+            <label for="number">Phn No:</label>
+            <input type="tel" id="number" name="number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number"
+                required> <br> <br>
+            <label for="gmail">Gmail:</label>
+            <input type="email" name="email" id="email"> <br><br>
+            <p>Adress:</p>
+            <label for="selectState">State:</label>
+            <select id="selectState" name="selectState" onchange="updateDistricts()">
+                <option value="" selected>Select</option>
+                <option value="option1">Andhra Pradesh</option>
+                <option value="option2">Telangana</option>
+                <option value="option3">Tamil Nadu</option>
+                <option value="option4">Karnataka</option>
+                <option value="option5">Kerala</option>
+
+            </select>
+
+            <label for="selectDistrict">District:</label>
+            <select id="selectDistrict" name="selectDistrict">
+                <option value="" selected>Select</option>
+            </select>
+
+            <label for="text">Pincode:</label>
+            <input type="text" id="pincode" name="pincode"><br><br>
+
+            <label for="text">House Adress:</label><br>
+
+            <textarea name="adress" id="" cols="25" rows="5"></textarea> <br><br>
+        </form>
+
+        <button type="button" onclick="placeorder()">Place Order</button>
+
+        <button type="button" onclick="backToCart()">Back to Cart</button>
+
+
+    </div>
+
+
+
+    <footer>
+
+        <p>&copy; 2024 My E-commerce Store. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+
+  section {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h2,
+  h3 {
+    color: #d40b0b;
+  }
+
+  nav {
+
+    background-color: #d40b0b;
+    color: #fff;
+    padding: 10px;
+  }
+
+  nav img {
+    max-height: 70px;
+  }
+
+  nav ul {
+    margin: 5px;
+    text-decoration: none;
+    font-size: 250%;
+    float: right;
+    list-style: none;
+  }
+
+  nav ul :hover {
+    color: rgb(11, 11, 246);
+    text-decoration: underline;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  nav ul li button {
+    margin: 15%;
+    border-radius: 100px;
+    background-color: #83f56f;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid;
+    cursor: pointer;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  button {
+    margin: 1%;
+    border-radius: 100px;
+    background-color: #78d984;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid;
+    cursor: pointer;
+  }
+
+  button a:link {
+    text-decoration: none;
+  }
+
+  .scrolltotop {
+    margin-left: 1400px;
+  }

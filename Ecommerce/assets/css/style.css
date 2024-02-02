@@ -1,0 +1,313 @@
+body,
+h1,
+h2,
+p,
+ul,
+li {
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+}
+
+title {
+  text-align: center;
+}
+
+nav {
+
+  background-color: #d40b0b;
+  color: #fff;
+  padding: 10px;
+}
+
+nav img {
+  max-height: 70px;
+}
+
+nav ul {
+  text-decoration: none;
+  font-size: 250%;
+  float: right;
+  list-style: none;
+}
+
+nav ul :hover {
+  color: rgb(11, 11, 246);
+  text-decoration: underline;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li button {
+  margin: 15%;
+  border-radius: 100px;
+  background-color: #83f56f;
+  color: #fff;
+  padding: 10px;
+  border: 2px solid;
+  cursor: pointer;
+}
+
+#shop-by-category,
+#latest-products,
+#features {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sliders {
+  text-align: center;
+}
+
+#shop-by-category ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+#shop-by-category h2 {
+  color: #d40b0b;
+  text-align: center;
+}
+
+#shop-by-category li {
+  color: #206ec7;
+  font-size: 20px;
+}
+
+#features h2 {
+  font-size: 30px;
+  color: #d40b0b;
+  text-align: center;
+}
+
+
+img {
+  max-height: 300px;
+
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+#scroll-to-top button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #1de216;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+
+button {
+  margin: 1%;
+  border-radius: 100px;
+  background-color: #78d984;
+  color: #fff;
+  padding: 10px;
+  border: 2px solid;
+  cursor: pointer;
+}
+
+button a:link {
+  text-decoration: none;
+}
+
+.scrolltotop {
+  margin-left: 1400px;
+}
+
+
+
+
+
+
+
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(245, 41, 10, 0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #de1212;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+#latest-products {
+  font-size: 20px;
+  padding: 30px;
+
+}
+
+#latest-products h2 {
+  color: #d40b0b;
+  text-align: center;
+}
+
+#latest-products ul {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#latest-products .products {
+  text-align: center;
+}
+
+
+
+#features {
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature {
+  border: 3px solid #cd1919;
+  border-radius: 10px;
+  margin: 70px;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  color: #333;
+}
+
+.feature p {
+  color: #666;
+}
+
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll-to-top:hover {
+  background-color: #2980b9;
+}

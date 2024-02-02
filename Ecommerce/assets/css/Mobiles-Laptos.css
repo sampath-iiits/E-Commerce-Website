@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    max-width: 250px;
+}
+
+.card img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+nav {
+    max-height: 10%;
+    background-color: #d40b0b;
+    color: #fff;
+    padding: 10px;
+    overflow: hidden;
+}
+
+nav img {
+    float: left;
+    max-height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    padding: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li button {
+    border-radius: 100px;
+    background-color: #83f56f;
+    color: #fff;
+    padding: 10px;
+    margin: 15px;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul :hover {
+    color: rgb(11, 11, 246);
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    margin: 1%;
+    border-radius: 100px;
+    background-color: #78d984;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+button a:link {
+    text-decoration: none;
+}
+
+.scrolltotop {
+    margin-left: 1400px;
+}

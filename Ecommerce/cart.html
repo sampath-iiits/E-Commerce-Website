@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="../Ecommerce/assets/css/cart.css">
+    <script src="../Ecommerce/assets/js/cart.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <h1>Your Shopping Cart</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+
+
+                </tr>
+            </thead>
+            <tbody id="cartTable">
+
+            </tbody>
+        </table>
+
+        <br>
+
+        <div id="totalAmount">Total Amount: Rs. 0.00</div>
+        <br>
+
+        <button id="backbutton" onclick="backToProducts()">Back to Products</button>
+
+        <button id="checkoutButton" onclick="checkout()">Checkout</button>
+    </div>
+
+
+
+    <footer>
+
+        <p>&copy; 2024 My E-commerce Store. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+
+    <link rel="stylesheet" href="../Ecommerce/assets/css/Chairs-Almariahs.css">
+    <script src="../Ecommerce/assets/js/Chairs-Almariahs.js"></script>
+
+</head>
+
+<body>
+
+    <nav>
+        <img src="../Ecommerce/assets/images/logo.jpg" alt="Logo">
+        <ul>
+            <li><button><a href="index.html" onclick="navigateToPage('index')">Home</a></button></li>
+            <li><button><a href="products.html" onclick="navigateToPage('products')">Products</a></button></li>
+            <li><button><a href="aboutus.html" onclick="navigateToPage('about-us')">About Us</a></button></li>
+            <li><button><a href="contactus.html" onclick="navigateToPage('contact-us')">Contact Us</a></button></li>
+            <li><button><a href="cart.html">Cart</a></button></li> <!-- Added Cart button -->
+        </ul>
+    </nav>
+
+    <br>
+
+
+
+    <div>
+        <label for="minPrice">Min Price:</label>
+        <input type="number" id="minPrice" min="0" step="1" placeholder="Min Price">
+
+        <label for="maxPrice">Max Price:</label>
+        <input type="number" id="maxPrice" min="0" step="1" placeholder="Max Price">
+
+        <button onclick="applyPriceFilter()">Apply Filter</button>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="categoryFilter">Category:</label>
+        <input type="text" id="categoryFilter" placeholder="Enter category">
+        <button onclick="applyCategoryFilter()">Apply Category Filter</button>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Wheel-Chair</h3>
+            <img src="../Ecommerce/assets/images/wheelchair.jpg" alt="">
+            <p class="price">Rs.19999/-</p>
+            <button class="add-to-cart" onclick="addToCart('Wheel-Chair', 19999, this)">Add to Cart</button>
+
+        </div>
+
+
+        <div class="card">
+            <h3>Wooden-Chair</h3>
+            <img src="../Ecommerce/assets/images/wooden-chair.jpg" alt="">
+            <p class="price">Rs.20000/-</p>
+            <button class="add-to-cart" onclick="addToCart('Wooden-Chair', 20000 , this)">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <h3>Almirah-3 Door</h3>
+            <img src="../Ecommerce/assets/images/3-door.jpg" alt="">
+            <p class="price">Rs.29999/-</p>
+            <button class="add-to-cart" onclick="addToCart('Almirah-3 Door', 29999, this)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <h3>Almirah-2 Door</h3>
+            <img src="../Ecommerce/assets/images/2door.jpg" alt="">
+            <p class="price">Rs.40000/-</p>
+            <button class="add-to-cart" onclick="addToCart('Almirah-2 Door', 40000 , this)">Add to Cart</button>
+        </div>
+
+
+
+    </div>
+
+    <div class="scrolltotop">
+        <button>Go-TOP</button>
+    </div>
+
+    <br>
+
+    <footer>
+
+        <p>&copy; 2024 My E-commerce Store. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

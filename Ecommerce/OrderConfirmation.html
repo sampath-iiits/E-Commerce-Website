@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+
+    <link rel="stylesheet" href="../Ecommerce/assets/css/OrderConfirmation.css">
+    <script src="../Ecommerce/assets/js/OrderConfirmation.js"></script>
+
+</head>
+
+<body>
+    <div class="confirmation-container">
+        <h2>Order Confirmation</h2>
+        <p>Your order has been confirmed successfully!</p>
+
+        <div class="order-details">
+            <p><strong>Order No:</strong>A23F67 <span id="orderNumber"></span></p>
+            <p><strong>Status:</strong> <span class="status">Confirmed</span></p>
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <h3>ThankYou for choosing my E-Commerce Store</h3>
+
+
+
+    <button id="backbutton" onclick="backToProducts()">Back to Products</button>
+
+
+    <script>
+        function backToProducts() {
+            window.location.href = "products.html";
+        }
+    </script>
+
+</body>
+
+</html>
